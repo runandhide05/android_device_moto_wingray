@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     device/moto/wingray/init.stingray.rc:root/init.stingray.rc \
     device/moto/wingray/init.stingray.usb.rc:root/init.stingray.usb.rc \
     device/moto/wingray/ueventd.stingray.rc:root/ueventd.stingray.rc \
+    device/moto/wingray/fstab.stingray:root/fstab.stingray \
 
 ifneq ($(TARGET_PREBUILT_WIFI_MODULE),)
 PRODUCT_COPY_FILES += \
