@@ -105,5 +105,8 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_FLASH_FROM_STORAGE := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
-TW_ALWAYS_RMRF := true
+#TW_ALWAYS_RMRF := true
 TW_NO_USB_STORAGE := true
+#attempt at encryption support
+TW_INCLUDE_JB_CRYPTO := true
+
