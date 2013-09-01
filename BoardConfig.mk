@@ -105,8 +105,20 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_FLASH_FROM_STORAGE := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
-#TW_ALWAYS_RMRF := true
 TW_NO_USB_STORAGE := true
+
 #attempt at encryption support
+#still need to verify 8-25-13 @ 1103PM
+# need to config these tags
 TW_INCLUDE_JB_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/sdhci-tegra.3/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc,errors=panic wait,encryptable=footer"
+TW_CRYPTO_FS_FLAGS := "0x00000406"
+TW_CRYPTO_KEY_LOC := "footer"
+
+#need config tags
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/tegra-i2c.0/i2c-0/0-002c/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
 
